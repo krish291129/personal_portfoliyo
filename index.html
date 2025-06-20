@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="resp.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script src="index.js" defer></script>
+    <div class="container">
+      <div class="navbar">
+        <ul id="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div class="icon">
+          <h5>
+            <i class="ri-instagram-line"></i><i class="ri-linkedin-fill"></i
+            ><i class="ri-facebook-line"></i><i class="ri-twitter-x-line"></i>
+          </h5>
+        </div>
+        <div class="content">
+          <h1>
+            Hi, I'm<br />
+            Krish Ghodasara
+          </h1>
+          <h3>A Passionate Front-End Developer</h3>
+
+          <div class="typewritter">
+            <p id="type">
+              I build beautiful, fast and responsive websites <br />using HTML,
+              CSS & JavaScript.
+            </p>
+            <!-- <h2 id="type2"></h2> -->
+          </div>
+
+          <!-- <div class="circle"></div> -->
+        </div>
+
+        <div class="photo">
+          <div class="circle">
+            <img src="E:\Placement\Portfoliyo\krish.jpg" alt="Krish Ghodasara" />
+          </div>
+        </div>
+      </div>
+
+      <div class="btn">
+        <button class="resume" id="resume" onclick="resume()">
+          <span id="resumeText">Resume</span>
+          <span id="loader" class="loader"></span>
+        </button>
+        <button class="view">View Projects</button>
+      </div>
+
+      <!-- about section -->
+
+      <div class="about-container">
+        <h1>About me</h1>
+
+        <h1>"Building the Future, One Line of Code at a Time."</h1>
+
+        <p>
+          A passionate BCA student and aspiring full-stack developer.<br />
+          Loves creating clean, functional, and user-friendly web
+          applications.<br />
+          Continuously learning and working with technologies like HTML, CSS,
+          JavaScript, Python, and Flutter.<br />
+          Believes in learning by building and solving real-world problems
+          through code.<br />
+          ✨ Always ready to collaborate and grow together.
+        </p>
+        <!-- skills section -->
+        <div class="main-box">
+          <div class="box1">
+            <i class="ri-html5-line"><span>HTML</span></i>
+            <h5>HTML</h5>
+          </div>
+          <div class="box2">
+            <i class="ri-css3-line"><span>CSS</span></i>
+            <h5>CSS</h5>
+          </div>
+          <div class="box3">
+            <i class="ri-javascript-line"><span>JAVASCRIPT</span></i>
+            <h5>JAVASCRIPT</h5>
+          </div>
+          <div class="box4">
+            <i class="ri-flutter-line"><span>FLUTTER</span></i>
+            <h5>FLUTTER</h5>
+          </div>
+          <div class="box5">
+            <i class="ri-bootstrap-line"><span>BOOTSTRAP</span></i>
+            <h5>BOOTSTRAP</h5>
+          </div>
+          <div class="box6">
+            <i class="ri-database-line"><span>DATABASE</span></i>
+            <h5>DATABASE</h5>
+          </div>
+          <div class="box7">
+            <i class="ri-github-line"><span>GITHUB</span></i>
+            <h5>GITHUB</h5>
+          </div>
+          <div class="box8">
+            <i class="ri-copilot-line"><span>COPILOT</span></i>
+            <h5>COPILOT</h5>
+          </div>
+        </div>
+      </div>
+
+      <!-- project section -->
+      <div class="project-container">
+        <h1>PROJECTS</h1>
+        <p>
+          During my BCA journey, I have worked on several projects using a
+          variety of technologies including HTML, CSS, JavaScript, and Python.
+          <br />These projects helped me strengthen my understanding of both
+          frontend and backend development. I enjoyed building responsive web
+          pages,<br />
+          interactive user interfaces, and solving real-life problems through
+          code.
+        </p>
+
+        <div class="p-main-box">
+          <div class="p-box1" id="project_content">
+            <h2>Project-1 &nbsp;  <span style="color: #264653; font-size: xx-large;">Quiz Application</span></h2>
+            <h4>
+              A simple and interactive quiz website built using HTML,<br />
+              CSS, and JavaScript. It includes MCQs, a timer, and live<br />
+              score calculation.
+            </h4>
+             <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+
+            <div class="p-btn">
+              <button class="p-view" onclick="pro1()">View Project</button>
+              <button class="zip">zip file</button>
+            </div>
+          </div>
+
+          <!-- for video -->
+          <div class="video" id="project1-video" style="display: none">
+            <video controls class="start-video">
+              <source src="E:\Placement\Portfoliyo\screen-recording-2025-03-24-204816_ynD2iSZi.mp4"/>
+              Your browser does not support the video tag.
+              </video>
+              <button class="closebtn" onclick="hidePro1()">❌</button>
+          </div>
+
+          <!-- box 2 -->
+          <div class="p-box2" id="project_content2">
+            <h2>Project-2 &nbsp;  <span style="color: #264653; font-size: x-large;">Banking Managment System</span></h2>
+            <h4>
+              "A Python-based CLI Banking System with MySQL integration, featuring 3-digit auto account numbers,<br> deposit, withdrawal, and account deletion functionalities."
+            </h4>
+             <p><strong>Technologies Used:</strong> Python , MySql</p>
+
+            <div class="p-btn2">
+              <button class="p-view2" onclick="pro2()">View Project</button>
+              <button class="zip2">zip file</button>
+            </div>
+          </div>
+
+           <!-- for video -->
+          <div class="video2" id="project2-video" style="display: none">
+            <video controls class="start-video2">
+              <source src="E:\Placement\Portfoliyo\screen-recording-2025-06-19-190326_83g2hG8Q.mp4" />
+              Your browser does not support the video tag.
+              </video>
+              <button class="closebtn2" onclick="hidePro2()">❌</button>
+          </div>
+        </div>
+
+
+        <!-- main-box-2 -->
+
+         <div class="p-main-box2">
+          <div class="p-box21" id="project_content21">
+            <h2>Project-3 &nbsp;  <span style="color: #264653; font-size: xx-large;">E-commerce Website</span></h2>
+            <h4>
+             "A basic E-commerce website built using HTML, CSS,<br> and JavaScript showcasing product listings,<br> cart functionality, and UI design."
+            </h4>
+             <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript</p>
+
+            <div class="p-btn21">
+              <button class="p-view21" onclick="pro21()">View Project</button>
+              <button class="zip21">zip file</button>
+            </div>
+          </div>
+
+           <!-- for video -->
+          <div class="video21" id="project-video21" style="display: none">
+            <video controls class="start-video21">
+              <source src="E:\Placement\Portfoliyo\screen-recording-2025-05-28-181509_G6LKSZEP.mp4" />
+              Your browser does not support the video tag.
+              </video>
+              <button class="closebtn" onclick="hidePro21()">❌</button>
+          </div>
+
+          <!-- box 4 -->
+          <div class="p-box22" id="project_content22">
+            <h2>Project-4 &nbsp;  <span style="color: #264653; font-size: x-large;">Student Managment System</span></h2>
+            <h4>
+              "A Python-based CLI Banking System with MySQL integration, featuring 3-digit auto account numbers,<br> deposit, withdrawal, and account deletion functionalities."
+            </h4>
+             <p><strong>Technologies Used:</strong> Python , C</p>
+
+            <div class="p-btn22">
+              <button class="p-view22" onclick="pro22()">View Project</button>
+              <button class="zip22">zip file</button>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+      <!--  -->
+      <!--  -->
+      <!-- education section -->
+
+      <div class="edu_container">
+        <h1>EDUCATION</h1>
+
+        <P>I completed my 12th board with 97% marks and chose to pursue a Bachelor's in Computer <br>Applications (BCA) because of my deep interest in coding. My journey began with learning the<br> C language, and gradually I explored various technologies such as HTML, CSS, JavaScript, <br>Java, Python, Operating Systems, DBMS, and Flutter. I have also worked on several projects <br>during this journey, applying my skills practically. Currently, I am in the 5th semester and<br> continuously learning and growing my knowledge in the field of programming and development.</P>
+
+
+        <div class="threebox">
+          <div class="three1">
+            <h2>Bachelors of Computer Applications (BCA)</h2>
+            <h4>Darshan University - Rajkot</h4>
+            <h5>CGPA: 7.59/10 (UPTO: SEM-4)</h5>
+            <div class="threebtn">
+              <a href="#" class="viewresult">View Result</a> <span style="color: white;">|</span>
+              <a href="#" class="Download">Download Certificates</a>
+            </div>
+          </div>
+          <div class="three2">
+            <h2>HIGHER SECONDARY CERTIFICATE  (HSC)</h2>
+            <h4>K.G. DHOLAKIYA SCHOOL - Rajkot (GSEB)</h4>
+            <h5>Percentage: 83.14%</h5>
+            <div class="threebtn2">
+              <a href="#" class="viewresult2">View Result</a> <span style="color: white;">|</span>
+              <a href="#" class="Download2">Download Certificates</a>
+            </div>
+          </div>
+          <div class="three3">
+            <h2>SECONDARY SCHOOL CERTIFICATE  (SSC)</h2>
+            <h4>ATMIYA SCHOOL - Rajkot (GSEB)</h4>
+            <h5>Percentage: 78.67%</h5>
+            <div class="threebtn3">
+              <a href="#" class="viewresult3">View Result</a> <span style="color: white;">|</span>
+              <a href="#" class="Download3">Download Certificates</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
